@@ -68,7 +68,7 @@ def send_quote():
     formatted_quote = format_quote(quote)
     
     today = datetime.datetime.now().strftime("%d.%m.%Y")
-    message = f"Доброе утро! ☀️"
+    message = f"Доброе утро! ☀️ \n\n{formatted_quote}"
     
     url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
     data = {
